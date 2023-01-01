@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>readers bookshop</title>
+</head>
+<style>
+      body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+
+    /* CSS for main element */
+    .topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+    .topnav input[type=text] {
+  float: center;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 420px;
+      background-image: url('bk 5.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #5edaf0;
+      color: #000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-us {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+    }
+
+    .about-us-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-us-text p {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+  </style>
+
+<body>
+
+  <header class="header">
+    <a href="sign in.html" class="logo"><img src="bk 2.jpg" width="100px" height="50px">readersera bookshop</a>
+    <nav class="nav-items">
+      <a href="https://www.google.com.et/maps">choose book store</a>
+      <a href="C:\Users\HP\Desktop\book shop\sign in.html">sign in/sign up</a>
+    </nav>
+  </header>
+  <main>
+    <div class="topnav">
+  <a class="gift cards" href="#home">gift card</a>
+  <a href="new books">new books</a>
+  <a href="best sellers">best sellers</a>
+  <a href="fiction">fiction</a>
+  <a href="non-fiction">non-fiction</a>
+  <a href="for kids">for kids</a>
+  <a href="audio">audio books</a>
+  <input type="text" placeholder="Search books">
+  <a href="#bottom">page down</a>
+</div>
+    <div class="intro">
+      <h1>welcome to readersera</h1>
+      <p>Books are uniquely portable magic...</p>
+      <button href="C:\Users\HP\Desktop\book shop\atomic habits.epub">best sellers of the week</button>
+    </div>
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-atom"></i>
+        <p class="work-heading">top 10 best books of 2022</p>
+        <p class="work-text">10 best books goes here</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-skiing"></i>
+        <p class="work-heading">our most anticipated books of 2023</p>
+        <p class="work-text">anticpated books goes here</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-ethernet"></i>
+        <p class="work-heading">for university students</p>
+        <p class="work-text">uv books goes here</p>
+      </div>
+    </div>
+    <div class="about-us">
+      <div class="about-us-text">
+        <h2>About us</h2>
+        <p>we are 3rd year software engineering students and this is our first website, which we tried to develop simple and easy book shopping website for everyone.</p>
+      </div>
+      <iframe src="bk vid.mp4" ></iframe><br>
+</div>
+  </main>
+  <footer class="footer">
+    <div class="copy">copyright &copy; 2023 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div><br>
+
+      <div class="links" >
+        <span>Social Links</span>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook">facebook</i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter">twitter</i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram">instagram</i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
